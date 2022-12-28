@@ -9,7 +9,7 @@
     "clib" : [
       {
         "path" : "Pandora/clib/renderex.dll",
-        "url" : "https://github.com/MOxXiE1337/pandora.crack/raw/main/clib/renderex.dll"
+        "url" : "https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/clib/renderex.dll"
       }
     ]
    }
