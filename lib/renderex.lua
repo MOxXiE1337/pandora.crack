@@ -53,7 +53,7 @@ function complex.init()
     ntdll_ntopenfile[4] = 0x00
 
     -- load c lib
-    complex.c = ffi.load("Pandora/clib/renderex")
+    complex.c = ffi.load("pandora/clib/renderex")
     -- search device
     complex.device = ffi.cast("void***", client.find_sig("shaderapidx9.dll", "A1 ? ? ? ? 50 8B 08 FF 51 0C") + 0x1)[0][0]
     -- get screen size
