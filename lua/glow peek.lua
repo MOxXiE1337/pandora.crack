@@ -3,7 +3,7 @@
 -- QQ: 938583253 Discord: lex-1337#2220
 
 local ffi = require("ffi")
-local renderex = require("Pandora/lib/renderex")
+local renderex = require("pandora/lib/renderex")
 
 ffi.cdef[[
    typedef struct 
