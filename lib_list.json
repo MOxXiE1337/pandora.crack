@@ -1,5 +1,5 @@
 {
-  "Pandora/lib/renderex" : {
+  "pandora/lib/renderex" : {
     "lib" : [
       {
         "path" : "Pandora/lib/renderex.lua",
