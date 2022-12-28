@@ -73,11 +73,3 @@ callbacks.register("paint", function()
     -- draw our circle 
     renderex.circle_world_filled(peek_pos, peek_radius:get(), peek_color2:get_color(), peek_color1:get_color(), peek_sides:get())
 end)
-
-
-
-
-
-
-
-
