@@ -55,14 +55,14 @@ function complex.init()
 end
 
 -- math helpers
-function complex.is_zero_2d(pos)
+function is_zero_2d(pos)
     if pos.x == 0 and pos.y == 0 then
         return true 
     end
     return false
 end
 
-function complex.equal_2d(pos1, pos2)
+function equal_2d(pos1, pos2)
     if pos1.x == pos2.x and pos1.y == pos2.y then 
         return true
     end
@@ -70,7 +70,7 @@ function complex.equal_2d(pos1, pos2)
 end
 
 -- fill vertex
-function complex.set_vtx(graph, idx, pos, color)
+function set_vtx(graph, idx, pos, color)
     graph.vtx[idx].pos.x = pos.x 
     graph.vtx[idx].pos.y = pos.y
     graph.vtx[idx].pos.z = 0 
@@ -91,9 +91,9 @@ function complex.triangle_filled(pos1, pos2, pos3, color1, color2, color3)
     end
 
     local graph = complex.c.alloc_graph(3, 3)
-    complex.set_vtx(graph, 0, pos1, color1)
-    complex.set_vtx(graph, 1, pos2, color2)
-    complex.set_vtx(graph, 2, pos3, color3)
+    set_vtx(graph, 0, pos1, color1)
+    set_vtx(graph, 1, pos2, color2)
+    set_vtx(graph, 2, pos3, color3)
     graph.idx[0] = 0 graph.idx[1] = 1 graph.idx[2] = 2
 end 
 
@@ -119,7 +119,7 @@ function complex.circle_world_filled(pos, radius, color1, color2, sides)
     for rotation = 0, math.pi * 2 + 0.001, step do
         local cpos = vector.new(radius * math.cos(rotation) + pos.x, radius * math.sin(rotation) + pos.y, pos.z)
         if render.world_to_screen(cpos, screen_pos) then
-            if not complex.equal_2d(screen_pos, prev_screen_pos) and not complex.is_zero_2d(prev_screen_pos) then
+            if not equal_2d(screen_pos, prev_screen_pos) and not is_zero_2d(prev_screen_pos) then
                 complex.triangle_filled(screen_pos, prev_screen_pos, pos_w2s, color2, color2, color1)
             end
         end
