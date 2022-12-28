@@ -41,17 +41,6 @@ ffi.cdef[[
 ]]
 
 function complex.init()
-    -- patch csgo nt open file
-    local ntdll = ffi.C.GetModuleHandleA("ntdll")
-    local ntdll_ntopenfile = ffi.cast("uint8_t*", ffi.C.GetProcAddress(ntdll, "NtOpenFile"))
-    ffi.C.VirtualProtect(ntdll_ntopenfile, 5, 0x40, ffi.new("uint32_t[1]"))
-    -- mov eax, 33
-    ntdll_ntopenfile[0] = 0xB8
-    ntdll_ntopenfile[1] = 0x33
-    ntdll_ntopenfile[2] = 0x00
-    ntdll_ntopenfile[3] = 0x00
-    ntdll_ntopenfile[4] = 0x00
-
     -- load c lib
     complex.c = ffi.load("pandora/clib/renderex")
     -- search device
