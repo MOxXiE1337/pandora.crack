@@ -40,19 +40,16 @@ ffi.cdef[[
     void post_data();
 ]]
 
-function complex.init()
-    -- load c lib
-    complex.c = ffi.load("pandora/clib/renderex")
-    -- search device
-    complex.device = ffi.cast("void***", client.find_sig("shaderapidx9.dll", "A1 ? ? ? ? 50 8B 08 FF 51 0C") + 0x1)[0][0]
-    -- get screen size
-    complex.screen_size = {}
-    complex.screen_size.w, complex.screen_size.h = render.get_screen()
-
-    -- init renderex
-    complex.c.init(complex.device, complex.screen_size.w, complex.screen_size.h)
-    complex.inited = true
-end
+-- load c lib
+complex.c = ffi.load("pandora/clib/renderex")
+-- search device
+complex.device = ffi.cast("void***", client.find_sig("shaderapidx9.dll", "A1 ? ? ? ? 50 8B 08 FF 51 0C") + 0x1)[0][0]
+-- get screen size
+complex.screen_size = {}
+complex.screen_size.w, complex.screen_size.h = render.get_screen()
+-- init renderex
+complex.c.init(complex.device, complex.screen_size.w, complex.screen_size.h)
+complex.inited = true
 
 -- math helpers
 function complex.is_zero_2d(pos)
