@@ -1,0 +1,16 @@
+{
+  "Pandora/lib/renderex" : {
+    "lib" : [
+      {
+        "path" : "Pandora/lib/renderex.lua",
+        "url" : "https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/lib/renderex.lua"
+      }
+    ],
+    "clib" : [
+      {
+        "path" : "Pandora/clib/renderex.dll",
+        "url" : "https://github.com/MOxXiE1337/pandora.crack/raw/main/clib/renderex.dll"
+      }
+    ]
+   }
+}
