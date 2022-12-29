@@ -1,5 +1,5 @@
 {
-  "pandora/lib/callbacksex" : {
+  "callbacksex" : {
     "lib" : [
       {
         "path" : "Pandora/lib/callbacksex.lua",
