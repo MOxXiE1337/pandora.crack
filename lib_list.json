@@ -1,15 +1,15 @@
 {
-  "pandora/lib/renderex" : {
+  "pandora/lib/callbacksex" : {
     "lib" : [
       {
-        "path" : "Pandora/lib/renderex.lua",
-        "url" : "https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/lib/renderex.lua"
+        "path" : "Pandora/lib/callbacksex.lua",
+        "url" : "https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/lib/callbacksex.lua"
       }
     ],
     "clib" : [
       {
-        "path" : "Pandora/clib/renderex.dll",
-        "url" : "https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/clib/renderex.dll"
+        "path" : "Pandora/clib/callbacksex.dll",
+        "url" : "https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/clib/callbacksex.dll"
       }
     ]
    }
