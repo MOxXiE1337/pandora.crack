@@ -2,15 +2,23 @@
   "callbacksex" : {
     "lib" : [
       {
-        "path" : "Pandora/lib/callbacksex.lua",
+        "path" : "pandora/lib/callbacksex.lua",
         "url" : "https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/lib/callbacksex.lua"
       }
     ],
     "clib" : [
       {
-        "path" : "Pandora/clib/callbacksex.dll",
+        "path" : "pandora/clib/callbacksex.dll",
         "url" : "https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/clib/callbacksex.dll"
       }
     ]
-   }
+   },
+  "hookex" : {
+    "clib" : [
+      {
+        "path" : "pandora/clib/hookex.dll",
+        "url" : "https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/clib/hookex.dll"
+      }
+    ] 
+  }
 }
