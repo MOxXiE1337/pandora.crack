@@ -12,5 +12,13 @@
         "url" : "https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/clib/callbacksex.dll"
       }
     ]
-   }
+  },
+  "hookex" : {
+    "lib" : [
+      {
+        "path" : "pandora/lib/hookex.lua",
+        "url" : "https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/lib/hookex.lua"
+      }
+    ]
+  }
 }
