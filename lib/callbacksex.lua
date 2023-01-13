@@ -15,14 +15,14 @@ ffi.cdef[[
 
 function complex.register(name, callback)
     if name == "unload" then
-        return callbacksex.reg_unload(ffi.cast("unload_callback_fn", callback), e9319306_721a_064e_43a0_68259aa188eb)
+        return callbacksex.reg_unload(ffi.cast("unload_callback_fn", callback), __FILE__)
     end
     return callbacks.register(name, callback)
 end
 
 function complex.deregister(name, callback)
     if name == "unload" then
-        return callbacksex.dereg_unload(ffi.cast("unload_callback_fn", callback), e9319306_721a_064e_43a0_68259aa188eb)
+        return callbacksex.dereg_unload(ffi.cast("unload_callback_fn", callback), __FILE__)
     end
     return callbacks.deregister(name, callback)
 end
