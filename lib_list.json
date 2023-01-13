@@ -3,13 +3,13 @@
     "lib" : [
       {
         "path" : "pandora/lib/callbacksex.lua",
-        "url" : "https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/lib/callbacksex.lua"
+        "url" : "https://ghproxy.com/https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/lib/callbacksex.lua"
       }
     ],
     "clib" : [
       {
         "path" : "pandora/clib/callbacksex.dll",
-        "url" : "https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/clib/callbacksex.dll"
+        "url" : "https://ghproxy.com/https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/clib/callbacksex.dll"
       }
     ]
   },
@@ -17,7 +17,7 @@
     "lib" : [
       {
         "path" : "pandora/lib/hookex.lua",
-        "url" : "https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/lib/hookex.lua"
+        "url" : "https://ghproxy.com/https://raw.githubusercontent.com/MOxXiE1337/pandora.crack/main/lib/hookex.lua"
       }
     ]
   }
